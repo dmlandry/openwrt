@@ -1,8 +1,11 @@
+# CircleCI build file
+
 version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/golang:stretch
-     steps:
-       - checkout
-       - run: echo "Hello World"
+
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:stretch
+    steps:
+      - checkout
+      - run: echo "Hello World"
