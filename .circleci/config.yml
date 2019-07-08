@@ -37,6 +37,5 @@ jobs:
           no_output_timeout: 2h
       - store_artifacts:
           path: ~/openwrt/bin/targets
-          destination: targets
       - run: echo "Completed"
 
