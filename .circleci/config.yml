@@ -8,14 +8,14 @@ jobs:
       - image: circleci/golang:stretch
     steps:
       - run:
-        name: Update package repo
-        command: sudo apt-get update
+          name: Update package repo
+          command: sudo apt-get update
       - run:
-        name: Install Openwrt dependencies
-        command: |
-          sudo apt-get install --no-install-recommends -y \
-            asciidoc bash binutils bzip2 flex git-core g++ gcc time util-linux gawk help2man intltool \
-            libelf-dev zlib1g-dev make libncurses5-dev libssl-dev patch perl-modules python2.7-dev unzip \
-            wget gettext xsltproc xz-utils
+          name: Install Openwrt dependencies
+          command: |
+            sudo apt-get install --no-install-recommends -y \
+              asciidoc bash binutils bzip2 flex git-core g++ gcc time util-linux gawk help2man intltool \
+              libelf-dev zlib1g-dev make libncurses5-dev libssl-dev patch perl-modules python2.7-dev unzip \
+              wget gettext xsltproc xz-utils
       # - checkout
       - run: echo "Hello World"
