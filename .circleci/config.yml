@@ -29,4 +29,10 @@ jobs:
           command: |
             cd ~/openwrt
             ./scripts/feeds install -a
-      - run: echo "Hello World"
+      - run:
+          name: Build openwrt
+          command: |
+            cd ~/openwrt
+            make
+      - run: echo "Completed"
+
