@@ -34,7 +34,7 @@ jobs:
           command: |
             cd ~/openwrt
             make
-          no_output_timeout: 2h
+          no_output_timeout: 3h
       - store_artifacts:
           path: ~/openwrt/bin/targets
       - run: echo "Completed"
