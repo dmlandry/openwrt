@@ -17,7 +17,8 @@ jobs:
               asciidoc bash binutils bzip2 flex git-core g++ gcc time util-linux gawk help2man intltool \
               libelf-dev zlib1g-dev make libncurses5-dev libssl-dev patch perl-modules python2.7-dev unzip \
               wget gettext xsltproc xz-utils
-      - checkout
+      - checkout:
+          path: ~/openwrt
       - run:
           name: Update openwrt feeds
           command: |
