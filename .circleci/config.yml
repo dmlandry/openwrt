@@ -34,5 +34,6 @@ jobs:
           command: |
             cd ~/openwrt
             make
+          no_output_timeout: 2h
       - run: echo "Completed"
 
